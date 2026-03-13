@@ -28,11 +28,11 @@
 
         Default {
             bindings = <
-&none  &none             &none         &none         &none      &none                                        &none                 &none  &none      &none       &none                  &none
-&none  &kp Q             &kp W         &kp E         &kp R      &kp T                                        &kp Y                 &kp U  &kp I      &kp O       &kp P                  &none
-&none  &mt LCTRL A       &kp S         &kp D         &kp F      &kp G      &none             &none           &kp H                 &kp J  &kp K      &kp L       &lt 2 MINUS            &none
-&none  &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B      &lt 5 LANGUAGE_1  &lt 5 LEFT_GUI  &kp N                 &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH  &none
-&none  &kp ESCAPE        &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &lt 3 TAB  &lt 4 LANGUAGE_2  &kp BACKSPACE   &mt LEFT_SHIFT ENTER  &none  &none      &kp RGUI    &kp LEFT_GUI           &none
+&none  &none             &none         &none         &none      &none                                       &none                 &none  &none      &none       &none                  &none
+&none  &kp Q             &kp W         &kp E         &kp R      &kp T                                       &kp Y                 &kp U  &kp I      &kp O       &kp P                  &none
+&none  &mt LCTRL A       &kp S         &kp D         &kp F      &kp G      &none             &none          &kp H                 &kp J  &kp K      &kp L       &lt 2 MINUS            &none
+&none  &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B      &lt 5 LANGUAGE_1  &lt 5 ESCAPE   &kp N                 &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH  &none
+&none  &kp ESCAPE        &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &lt 3 TAB  &lt 4 LANGUAGE_2  &kp BACKSPACE  &mt LEFT_SHIFT ENTER  &none  &none      &kp RGUI    &kp LEFT_GUI           &none
             >;
         };
 
