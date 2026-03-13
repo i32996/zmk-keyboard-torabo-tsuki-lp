@@ -33,6 +33,8 @@
     >;                           //
 };                               //追記: ここまで
 
-&pointing_device {               //追記: CPI設定
-    cpi = <1000>;                //
+&spi0 {
+    pointing_device@0 {          //追記: CPI設定
+        cpi = <1200>;            //
+    };                           //
 };                               //追記: ここまで
