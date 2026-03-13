@@ -7,20 +7,19 @@
     combos {
         compatible = "zmk,combos";
 
-        bt_clear {
-            bindings = <&bt BT_CLR>;
-            key-positions = <28 29>;
-            layers = <2>;
-        };
-
         Eisuu {
-            bindings = <&kp LC(SEMI)>;
+            bindings = <&kp F10>;
             key-positions = <25 36>;
         };
 
         MiddleClick {
             bindings = <&mkp MCLK>;
             key-positions = <34 35>;
+        };
+
+        KeyNumCheck {
+            bindings = <&none>;
+            key-positions = <35 34 33>;
         };
     };
 
@@ -29,11 +28,11 @@
 
         Default {
             bindings = <
-&none  &none             &none         &none         &none      &none                                                     &none        &none  &none      &none     &none                 &none
-&none  &kp Q             &kp W         &kp E         &kp R      &kp T                                                     &kp Y        &kp U  &kp I      &kp O     &kp P                 &none
-&none  &mt LCTRL A       &kp S         &kp D         &kp F      &kp G      &none                      &none               &kp H        &kp J  &kp K      &kp L     &lt 2 MINUS           &none
-&none  &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B      &lt 5 INT_MUHENKAN         &lt 5 INT_MUHENKAN  &kp N        &kp M  &kp COMMA  &kp DOT   &mt RIGHT_SHIFT FSLH  &none
-&none  &lt 3 ESCAPE      &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &lt 2 TAB  &mt LEFT_SHIFT LANGUAGE_1  &kp BACKSPACE       &lt 4 ENTER  &none  &none      &kp RGUI  &kp INT_MUHENKAN      &none
+&none  &none             &none         &none         &none      &none                                                   &none        &none  &none      &none     &none                 &none
+&none  &kp Q             &kp W         &kp E         &kp R      &kp T                                                   &kp Y        &kp U  &kp I      &kp O     &kp P                 &none
+&none  &mt LCTRL A       &kp S         &kp D         &kp F      &kp G      &none                      &none             &kp H        &kp J  &kp K      &kp L     &lt 2 MINUS           &none
+&none  &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B      &lt 5 LANGUAGE_1           &lt 5 LANGUAGE_2  &kp N        &kp M  &kp COMMA  &kp DOT   &mt RIGHT_SHIFT FSLH  &none
+&none  &lt 3 ESCAPE      &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &lt 3 TAB  &mt LEFT_SHIFT LANGUAGE_2  &kp BACKSPACE     &lt 4 ENTER  &none  &none      &kp RGUI  &kp LANGUAGE_2        &none
             >;
         };
 
