@@ -28,11 +28,11 @@
 
         Default {
             bindings = <
-&none  &none             &none         &none         &none      &none                                                   &none        &none  &none      &none     &none                 &none
-&none  &kp Q             &kp W         &kp E         &kp R      &kp T                                                   &kp Y        &kp U  &kp I      &kp O     &kp P                 &none
-&none  &mt LCTRL A       &kp S         &kp D         &kp F      &kp G      &none                      &none             &kp H        &kp J  &kp K      &kp L     &lt 2 MINUS           &none
-&none  &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B      &lt 5 LANGUAGE_1           &lt 5 LANGUAGE_2  &kp N        &kp M  &kp COMMA  &kp DOT   &mt RIGHT_SHIFT FSLH  &none
-&none  &lt 3 ESCAPE      &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &lt 3 TAB  &mt LEFT_SHIFT LANGUAGE_2  &kp BACKSPACE     &lt 4 ENTER  &none  &none      &kp RGUI  &kp LANGUAGE_2        &none
+&none  &none             &none         &none         &none      &none                                                   &none        &none  &none      &none      &none           &none
+&none  &kp Q             &kp W         &kp E         &kp R      &kp T                                                   &kp Y        &kp U  &kp I      &kp O      &kp P           &none
+&none  &mt LCTRL A       &kp S         &kp D         &kp F      &kp G      &none                      &none             &kp H        &kp J  &kp K      &kp L      &lt 2 MINUS     &none
+&none  &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B      &lt 5 LANGUAGE_1           &lt 5 LANGUAGE_2  &kp N        &kp M  &mkp LCLK  &mkp RCLK  &msc MOVE_Y(0)  &none
+&none  &lt 3 ESCAPE      &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &lt 3 TAB  &mt LEFT_SHIFT LANGUAGE_2  &kp BACKSPACE     &lt 4 ENTER  &none  &none      &kp RGUI   &kp LANGUAGE_2  &none
             >;
         };
 
@@ -71,7 +71,7 @@
 &trans  &trans            &trans            &trans            &trans            &trans                      &trans                &trans            &trans             &trans         &trans      &trans
 &trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                  &kp LS(NUMBER_6)      &kp LS(N7)        &kp LS(N8)         &kp LS(N9)     &kp LS(N0)  &trans
 &trans  &trans            &trans            &trans            &trans            &trans      &trans  &trans  &kp GRAVE             &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON  &kp EQUAL   &trans
-&trans  &trans            &trans            &trans            &trans            &trans      &trans  &trans  &kp NON_US_BACKSLASH  &kp SQT           &trans             &trans         &trans      &trans
+&trans  &trans            &trans            &trans            &trans            &trans      &trans  &trans  &kp NON_US_BACKSLASH  &kp SQT           &kp COMMA          &kp PERIOD     &kp SLASH   &trans
 &trans  &trans            &trans            &trans            &trans            &trans      &trans  &trans  &trans                &trans            &trans             &trans         &trans      &trans
             >;
         };
