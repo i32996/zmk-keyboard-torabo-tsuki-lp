@@ -4,7 +4,7 @@
 
     input-processors = <&zip_temp_layer 1 10000>;         //追記: AMLのレイヤーとタイムアウトする時間 動作確認済
 
-    scroller {                                            //追記: スクロールレイヤー 動作確認済み
+    scroller {                                            //追記: スクロールレイヤー 動作確認済
         layers = <2>;                                     //
         input-processors = <&zip_xy_to_scroll_mapper>;    //
     };                                                    //追記: ここまで
