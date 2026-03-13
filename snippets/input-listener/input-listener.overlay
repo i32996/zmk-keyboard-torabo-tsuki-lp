@@ -3,4 +3,9 @@
     device = <&pointing_device>;
 
     input-processors = <&zip_temp_layer 1 10000>; //追記: AMLのレイヤーとタイムアウトする時間 動作確認済
+
+    scroller {        //追記: お試し中
+        layers = <4>;
+        input-processors = <&zip_xy_to_scroll_mapper>;
+    };
 };
