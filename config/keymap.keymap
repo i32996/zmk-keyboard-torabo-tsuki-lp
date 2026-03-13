@@ -36,17 +36,17 @@
             >;
         };
 
-        Mouse {
+        AutoMouseLayer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans     &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mo 2      &mkp RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &mkp MCLK  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &mkp MCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
             >;
         };
 
-        Arrow {
+        Arrow+ScrollLayer {
             bindings = <
 &trans  &trans  &trans                    &trans                    &trans                    &trans                             &trans       &trans              &trans          &trans         &trans  &trans
 &trans  &trans  &trans                    &kp LA(LG(P))             &trans                    &trans                             &trans       &trans              &kp UP_ARROW    &trans         &trans  &trans
