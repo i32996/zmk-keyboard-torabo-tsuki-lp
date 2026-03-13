@@ -18,7 +18,7 @@
     col-offset = <7>;
 };
 
-&zip_temp_layer {                //追記: AML抜け除外 お試し中
+&zip_temp_layer {                //追記: AML抜け除外 動作確認済
     excluded-positions = <       //
         33 // J                  //
         34 // K                  //
