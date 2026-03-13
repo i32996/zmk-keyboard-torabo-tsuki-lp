@@ -6,6 +6,6 @@
 
     scroller {                                            //追記: スクロールレイヤー 動作確認済み
         layers = <2>;
-        input-processors = <&zip_xy_to_scroll_mapper>;    //追記: ここまで
-    };
+        input-processors = <&zip_xy_to_scroll_mapper>;
+    };                                                    //追記: ここまで
 };
