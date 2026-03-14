@@ -7,11 +7,6 @@
     combos {
         compatible = "zmk,combos";
 
-        Eisuu {
-            bindings = <&kp F10>;
-            key-positions = <25 36>;
-        };
-
         MiddleClick {
             bindings = <&mkp MCLK>;
             key-positions = <34 35>;
