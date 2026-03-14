@@ -12,7 +12,7 @@
         layers = <2>;                                     //レイヤー2をスクロールレイヤーに設定
         input-processors = <                              //    スクロールレイヤー移行後にスクロールが有効になるまでの余白時間が長く感じたため、
             &zip_xy_to_scroll_mapper                      //    別途keymap.keymapにbehaviorを追加し、それを介してスクロールレイヤーに入ることで解消
-            &zip_scroll_scaler 1 15                       //スクロール速度 1/15、デフォのスクロールはやすぎ
+            &zip_scroll_scaler 1 20                       //スクロール速度 1/20、デフォのスクロールはやすぎ
             &zip_scroll_transform INPUT_TRANSFORM_X_INVERT    //X軸逆転、横スクロールが左右逆だったため
         >;                                                //
     };                                                    //追記: ここまで
