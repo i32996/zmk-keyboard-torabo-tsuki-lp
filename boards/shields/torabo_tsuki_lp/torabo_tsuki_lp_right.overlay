@@ -31,8 +31,8 @@
 };
 
 &zip_temp_layer {                //追記: AML抜け除外 動作確認済
-    excluded-positions = <       //
-        33 // J                  //
+    excluded-positions = <       //    除外するキーを設定することで、
+        33 // J                  //    それ以外のキーを押すとAMLから抜けるようになる
         34 // K                  //
         35 // L                  //
     >;                           //
