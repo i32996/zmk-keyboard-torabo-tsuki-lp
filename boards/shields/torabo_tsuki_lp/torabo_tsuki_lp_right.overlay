@@ -12,7 +12,7 @@
         layers = <2>;                                     //
         input-processors = <                              //
             &zip_xy_to_scroll_mapper                      //
-            &zip_scroll_scaler 1 5                        //スクロール速度 1/5
+            &zip_scroll_scaler 1 10                        //スクロール速度 1/10
         >;                                                //
     };                                                    //追記: ここまで
 };
