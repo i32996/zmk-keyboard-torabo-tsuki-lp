@@ -13,7 +13,7 @@
         input-processors = <                              //
             &zip_xy_to_scroll_mapper                      //
             &zip_scroll_scaler 1 15                       //スクロール速度 1/15
-            &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT    //Y軸逆転
+            &zip_scroll_transform INPUT_TRANSFORM_X_INVERT    //X軸逆転
         >;                                                //
     };                                                    //追記: ここまで
 };
