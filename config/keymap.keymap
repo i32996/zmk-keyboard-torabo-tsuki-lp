@@ -14,7 +14,7 @@
     };
 
     behaviors {
-        st: scroll_tap {
+        st: scroll_tap {                            //追記:スクロールレイヤー移行後の遅延を減らすためのbehavior
             compatible = "zmk,behavior-hold-tap";
             label = "Scroll / Tap";
             bindings = <&mo>, <&kp>;
@@ -25,7 +25,7 @@
             hold-while-undecided;
         };
 
-        hm: homerow-mods {
+        hm: homerow-mods {                            //追記:Mod/TapのMod誤爆対策のbehavior
             compatible = "zmk,behavior-hold-tap";
             label = "homehow-mods";
             #binding-cells = <2>;
