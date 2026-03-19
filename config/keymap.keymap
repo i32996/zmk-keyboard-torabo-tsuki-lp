@@ -14,23 +14,33 @@
     };
 
     behaviors {
-        st: scroll_tap {
+        st: scroll_tap {                            //Scrol Layerに入る際のタイムラグを解消
             compatible = "zmk,behavior-hold-tap";
             label = "Scroll / Tap";
             bindings = <&mo>, <&kp>;
-
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "balanced";
             hold-while-undecided;
         };
 
-        hm: homerow-mods {
+        hm: homerow-mods {                            //文字のModTapでModが誤爆しやすい挙動を改善 同時押しの際にTapを優先
             compatible = "zmk,behavior-hold-tap";
             label = "homehow-mods";
             #binding-cells = <2>;
             tapping-term-ms = <175>;
             flavor = "tap-preferred";
+            quick-tap-ms = <125>;
+            global-quick-tap;
+            bindings = <&kp>, <&kp>;
+        };
+
+        sands: space_and_shift {                      //Space長押し時の挙動 単押し=Space、長押し=Space長押し、長押し+別キー=Shift
+            compatible = "zmk,behavior-hold-tap";
+            label = "SPACE_AND_SHIFT";
+            #binding-cells = <2>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <200>;
             quick-tap-ms = <125>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
