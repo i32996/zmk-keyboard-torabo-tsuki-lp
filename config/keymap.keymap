@@ -54,7 +54,7 @@
             #binding-cells = <0>;
             bindings = <&kp LS(LA(EQUAL)) &kp LS(LA(EQUAL)) &kp LS(LA(EQUAL)) &kp LS(LA(EQUAL)) &kp LS(LA(EQUAL))>;
             label = "ABLETONHEIGHTZOOMIN";
-            tap-ms = <20>;
+            wait-ms = <10>;
         };
 
         AbletonHZout: AbletonHeightZoomOut {
@@ -62,7 +62,7 @@
             #binding-cells = <0>;
             bindings = <&kp LA(MINUS) &kp LA(MINUS) &kp LA(MINUS) &kp LA(MINUS) &kp LA(MINUS)>;
             label = "ABLETONHEIGHTZOOMOUT";
-            tap-ms = <20>;
+            wait-ms = <10>;
         };
     };
 
