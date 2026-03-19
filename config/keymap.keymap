@@ -14,17 +14,18 @@
     };
 
     behaviors {
-        st: scroll_tap {                            //Scrol Layerに入る際のタイムラグを解消
+        st: scroll_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "Scroll / Tap";
             bindings = <&mo>, <&kp>;
+
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "balanced";
             hold-while-undecided;
         };
 
-        hm: homerow-mods {                            //文字のModTapでModが誤爆しやすい挙動を改善 同時押しの際にTapを優先
+        hm: homerow-mods {
             compatible = "zmk,behavior-hold-tap";
             label = "homehow-mods";
             #binding-cells = <2>;
@@ -35,7 +36,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        sands: space_and_shift {                      //Space長押し時の挙動 単押し=Space、長押し=Space長押し、長押し+別キー=Shift
+        sands: space_and_shift {
             compatible = "zmk,behavior-hold-tap";
             label = "SPACE_AND_SHIFT";
             #binding-cells = <2>;
@@ -46,7 +47,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        sandl: space_and_layer {                      //Space長押し時の挙動 単押し=Space、長押し=Space長押し、長押し+別キー=LAYER
+        sandl: space_and_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "SPACE_AND_LAYER";
             #binding-cells = <2>;
@@ -79,11 +80,11 @@
 
         Default {
             bindings = <
-&none  &none             &none                &none                    &none                    &none                                &none                 &none  &none      &none       &none                  &none
-&none  &kp Q             &kp W                &kp E                    &kp R                    &kp T                                &kp Y                 &kp U  &kp I      &kp O       &kp P                  &none
-&none  &hm LCTRL A       &lt 3 S              &lt 4 D                  &kp F                    &kp G      &none      &none          &kp H                 &kp J  &lt 4 K    &lt 3 L     &st 2 MINUS            &none
-&none  &hm LEFT_SHIFT Z  &kp X                &kp C                    &kp V                    &kp B      &lt 5 ESC  &lt 5 ESC      &kp N                 &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH  &none
-&none  &mt LEFT_ALT ESC  &mt LEFT_ALT ESCAPE  &mt LEFT_ALT LANGUAGE_1  &mt LEFT_GUI LANGUAGE_2  &kp SPACE  &lt 3 TAB  &kp BACKSPACE  &mt LEFT_SHIFT ENTER  &none  &none      &trans      &trans                 &none
+&none  &none             &none                &none                    &none                    &none                                     &none                 &none  &none      &none       &none                  &none
+&none  &kp Q             &kp W                &kp E                    &kp R                    &kp T                                     &kp Y                 &kp U  &kp I      &kp O       &kp P                  &none
+&none  &hm LCTRL A       &lt 3 S              &lt 4 D                  &kp F                    &kp G           &none      &none          &kp H                 &kp J  &lt 4 K    &lt 3 L     &st 2 MINUS            &none
+&none  &hm LEFT_SHIFT Z  &kp X                &kp C                    &kp V                    &kp B           &lt 5 ESC  &lt 5 ESC      &kp N                 &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH  &none
+&none  &mt LEFT_ALT ESC  &mt LEFT_ALT ESCAPE  &mt LEFT_ALT LANGUAGE_1  &mt LEFT_GUI LANGUAGE_2  &sandl 3 SPACE  &lt 3 TAB  &kp BACKSPACE  &mt LEFT_SHIFT ENTER  &none  &none      &trans      &trans                 &none
             >;
         };
 
