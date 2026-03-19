@@ -46,13 +46,6 @@
             global-quick-tap;
             bindings = <&mo>, <&kp>;
         };
-
-        td_lt: tap_dance_layer_tap {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&lt 4 d>, <&kp d>;
-        };
     };
 
     macros {
