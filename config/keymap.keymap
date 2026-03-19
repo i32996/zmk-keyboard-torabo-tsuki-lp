@@ -36,17 +36,6 @@
             bindings = <&kp>, <&kp>;
         };
 
-        sands: space_and_shift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SPACE_AND_SHIFT";
-            #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
-            global-quick-tap;
-            bindings = <&kp>, <&kp>;
-        };
-
         sandl: space_and_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "SPACE_AND_LAYER";
@@ -56,6 +45,13 @@
             quick-tap-ms = <125>;
             global-quick-tap;
             bindings = <&mo>, <&kp>;
+        };
+
+        td_lt: tap_dance_layer_tap {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&lt 4 d>, <&kp d>;
         };
     };
 
